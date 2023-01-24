@@ -1,0 +1,437 @@
+
+
+
+
+
+
+/*Imagen principal de perfil*/
+img {
+
+}
+
+
+header {
+    float: left;
+    background-color: rgb(220, 223, 245);
+    width: 100%;
+}
+
+#pslogos{
+    height: 40px;
+    width: auto;
+    /*
+    text-align: center;*/
+    text-indent: 12px;
+    
+}
+
+#profile{
+
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 1.5%;
+    width: auto; 
+    max-width: 96%;
+    border-radius: 50%;
+    background-color: rgb(220, 245, 231);
+    float: left;
+
+
+
+    width: 400px;
+}
+
+
+
+
+#nombre{
+    font-size:xx-large;
+    padding: 1% 0%;
+    
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align:top;
+
+    /*
+    background-color:yellow;
+    */
+
+
+}
+
+#profesion{
+    /*font-size: 20px;*/
+    text-indent: 1%;
+    color: gray;
+    /*
+    background-color:rgb(236, 236, 236);
+    */
+
+}
+
+#profile-des{
+
+    color:rgba(64, 64, 102, 0.767);
+    
+    padding: 3%;
+    text-indent: 2%;
+    background: rgb(236,236,236);
+    background: linear-gradient(0deg, rgba(236,236,236,0.09) 0%,
+    white 30%,
+     white 70%,
+     
+     rgba(236,236,236,0.05) 100%); 
+
+/*
+     rgba(101,101,203,0.5) 75%,
+    background-color: rgba(101, 101, 230, 0.842);
+*/
+
+    /*
+    background-image: linear-gradient(to bottom right, 
+    rgba(101, 101, 230, 0.842), rgba(185, 126, 185, 0.527));
+
+*/
+
+    /*
+        background-image: linear-gradient(to bottom right,
+     rgba(101, 101, 230, 0.842), rgba(185, 126, 185, 0.527));
+    */
+
+
+    
+}
+
+.sectioncontent{
+    display: inline-block;
+    padding: 0%;
+    margin: 0%;
+
+    /*
+    background-color:rgb(9, 255, 0);
+    */
+
+}
+
+
+body header section{
+    padding: 0% 0%;
+    vertical-align:top;
+    /*
+        background-color:rgb(162, 0, 255);
+    */
+}
+
+
+
+
+
+/* Caja con contenido submenu */
+.submenu{
+    width: 24%;
+    max-height: 100%;
+    /*height: 400px;*/
+    background-color: brown;
+    float:left;
+
+
+}
+
+/* Linea de submenu*/
+.linea {
+    border-top: 2px solid black;
+    height: 2px;
+
+    max-width: 90%;
+    padding: 0%;
+    margin: 1px 0 0 0;
+    /*margin: 2px auto 0 auto;*/
+}
+
+
+
+
+
+
+
+/* Caja con contenido principal */
+.content{
+    float:right;
+    width: 75%;
+    height: 100%;
+    /*
+    background-color: aqua;
+    */
+
+}
+
+
+
+/* Cuerpo general de cada seccion principal */
+body main section{
+    float:left;
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+    
+    /*
+    background-color: rgb(105, 128, 0);
+    */
+}
+
+/*Encabezado de cada seccion*/
+body main section article h2{
+    
+    /*display: flex;
+    justify-content: center;
+    align-self: left;
+        border: 2px solid rgb(0, 255, 170);
+    */
+    
+    font-size: 20px;
+    margin: 0%;
+    display:block;
+    justify-content: center;
+    text-align: left;
+    max-width: 100%;
+    text-indent: 2%;
+}
+
+
+
+
+
+
+
+
+   /* Panel de la izquierda */
+ul{
+
+    /*
+    background-color:rgb(223, 184, 10);
+    */
+
+    margin: 0%;
+    padding: 0% 0.75%;
+
+}
+
+
+
+
+
+
+
+
+
+
+.año{
+    font-weight:bold;
+    /*/background-color: #bbb;
+        border: 2px solid black;
+    */
+
+
+    padding-right: 18px;
+    text-indent: 22px;
+    font-size: 18px;
+    background-color:aliceblue;
+}
+
+td{
+    font-weight:lighter;
+    /*/background-color: #bbb;*/
+    font-size: 15px;
+}
+
+
+
+
+p{
+    margin: 1px;
+    background-color:aliceblue;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contenido {
+    height: 50px;
+    width: 50px;
+	line-height:300%;
+    border-radius: 50%;
+
+	margin:0px auto;
+	text-align:center;
+	background-color:#CCCCCC;
+}
+
+.dot {
+
+
+
+    height: 50px;
+    width: 50px;
+
+
+    background-color:purple;
+    border-radius: 50%;
+    text-align:center;
+    
+    display: inline-block;
+    vertical-align: middle;
+
+
+    /*
+    display: inline-block;
+    vertical-align: middle;
+
+    display:table-cell;*/
+    
+}
+
+/* Para los iconos que solo estan en los encabezados */
+
+body main section i{
+    
+    color: white;
+    padding: 30%;
+}
+
+
+
+
+
+
+.cargo{
+    text-align: center;
+    font-size: 22px ;
+    /*
+    text-decoration:underline;
+    font-weight:800;
+    */
+}
+
+
+#duracion{
+    font-size: 14px ;
+    font-weight:bolder;
+    margin-right: 2%;
+}
+
+li{
+    /*
+    list-style:none;
+    list-style-position:inside;
+        background-color:rgb(0, 195, 255);
+    */
+    list-style:square;
+    list-style-position:inside;
+    /*
+    color: rgba(185, 126, 185, 0.527);
+    color: rgba(101, 101, 230, 0.842);
+    */
+    color: rgba(64, 64, 102, 0.767);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+#div1{
+    max-width: 50%;
+    background-color: red;
+}
+
+dd {
+
+    margin: 0;
+}
+
+dd, dt {
+    
+    display: inline;
+}
+dd, dt, .address {
+
+    
+    vertical-align: middle;
+}
+.address {
+    display: inline-block;
+    white-space: pre;
+}*/
+
+/*
+  .imgcontent {
+    height:80%;
+    text-align: left;
+    background-color: rgb(138, 150, 240);
+   }
+   */
+
+/*
+
+.image--cover {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin: 20px;
+    object-fit: cover;
+    object-position: center right;
+  }
+  
+  .users{
+    text-decoration: none;
+    color: #374457;
+    font-size: 18px;
+    font-weight: bold;
+    display:flex;
+    align-items:center;
+  }
+  
+  
+  .container-username{
+    
+    display:flex;
+    flex-direction:column;
+  
+  }*/
+
+  /*
+  * {
+    padding: 0;
+     margin: 0 auto 0 auto; 
+    }*/

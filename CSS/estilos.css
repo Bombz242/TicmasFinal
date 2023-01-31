@@ -1,149 +1,183 @@
 
-
-
-
-
-
-/*Imagen principal de perfil*/
-img {
-
-}
-
-
+/* Primer fondo */ /* background-color: aqua; */
 header {
     float: left;
-    background-color: rgb(220, 223, 245);
+    background-image: url(/Img/4.jpg);
     width: 100%;
+    /*background-color: rgb(220, 223, 245); */
 }
 
-#pslogos{
-    height: 40px;
-    width: auto;
-    /*
-    text-align: center;*/
-    text-indent: 12px;
+.img-container-block {
+    text-align: center;
+}
+
+
+
+@media only screen and (min-width:750px){
     
+    #profile{ /*Imagen principal de perfil*/
+        float: left;
+    }
+
+    .img-container-block {
+        text-align: left;
+    }
 }
 
-#profile{
-
+#profile{ /*Imagen principal de perfil*/
     margin-top: 1%;
     margin-left: 2%;
     margin-right: 2%;
     margin-bottom: 1.5%;
     width: auto; 
     max-width: 96%;
-    border-radius: 50%;
-    background-color: rgb(220, 245, 231);
-    float: left;
-
-
-
+    border-radius: 50%; /* background-color: rgb(220, 245, 231);*/
     width: 400px;
+
+    /*padding: 0.3%;*/
+    background-color: black;
+    padding: 0.3%;
 }
 
 
 
-
-#nombre{
-    font-size:xx-large;
+#nombre{     /* Nombre en el perfil */
+    text-shadow: 1px 1px 2px black;
+    font-size: max(3vw, 35px);    /*font-size:xx-large;*/
+    margin-left: 2%;
     padding: 1% 0%;
-    
     text-transform: uppercase;
     display: inline-block;
     vertical-align:top;
-
-    /*
-    background-color:yellow;
-    */
-
-
 }
 
-#profesion{
-    /*font-size: 20px;*/
+#profesion{  /* Profesion en el perfil */
+    color:beige;
+    margin-left: 2%;
+    text-shadow: 1px 1px 2px purple;
+    font-size: max(1.5vw, 20px);
     text-indent: 1%;
-    color: gray;
-    /*
-    background-color:rgb(236, 236, 236);
-    */
-
 }
 
-#profile-des{
-
-    color:rgba(64, 64, 102, 0.767);
-    
+#profile-des{ /* Descripcion en el perfil */
+    color:aliceblue;
+    text-shadow: 1px 1px 2px black;
     padding: 3%;
-    text-indent: 2%;
+    text-indent: 0.5%;
     background: rgb(236,236,236);
-    background: linear-gradient(0deg, rgba(236,236,236,0.09) 0%,
-    white 30%,
-     white 70%,
-     
-     rgba(236,236,236,0.05) 100%); 
-
-/*
-     rgba(101,101,203,0.5) 75%,
-    background-color: rgba(101, 101, 230, 0.842);
-*/
-
-    /*
-    background-image: linear-gradient(to bottom right, 
-    rgba(101, 101, 230, 0.842), rgba(185, 126, 185, 0.527));
-
-*/
-
-    /*
-        background-image: linear-gradient(to bottom right,
-     rgba(101, 101, 230, 0.842), rgba(185, 126, 185, 0.527));
-    */
-
-
-    
+    background: linear-gradient(0deg, 
+    rgba(236,236,236,0.09) 0%, 
+    rgba(64, 64, 102, 0.37) 30%, rgba(64, 64, 102, 0.37) 70%, 
+    rgba(236,236,236,0.05) 100%); 
 }
 
-.sectioncontent{
-    display: inline-block;
-    padding: 0%;
+#direccion{  /* Direccion en el perfil */
+    margin-left: 2%;
+}
+
+#ciudad{ /* Ciudad en el perfil */
+    margin-left: 45px;
+}
+
+
+
+/* Caja con contenido principal */
+.content{     /* background-color: aqua; */
+    width: 91%;
+    height: 100%;
+    margin-left: 1%;
+}
+
+/* Panel de la izquierda */
+body ul{/* background-color: aqua; */
     margin: 0%;
+    padding: 0% 0.75%;
+}
 
-    /*
-    background-color:rgb(9, 255, 0);
-    */
-
+body tr p{
+    margin: 1px;
+    background-color:aliceblue;
 }
 
 
-body header section{
-    padding: 0% 0%;
-    vertical-align:top;
-    /*
-        background-color:rgb(162, 0, 255);
-    */
+/*Encabezado de cada seccion*/
+body h2{
+    font-size: 20px;
+    display:block;
+    justify-content: center;
+    text-align: left;
+    max-width: 100%;
+    text-indent: 2%;
+    margin: 1px;
+    background-color:aliceblue;
+}
+
+main li{
+    list-style:square;
+    list-style-position:inside;
+    /*    color: rgba(64, 64, 102, 0.767); */
+}
+
+ol{
+    margin: 0px;
+    text-indent: 20px;
+}
+
+/* Para los iconos que solo estan en los encabezados */
+body main section i{
+    color: white;
+    padding: 30%;
+}
+
+#pslogos{
+    height: 40px;
+    width: auto;
+    text-indent: 12px;
 }
 
 
 
 
-
-/* Caja con contenido submenu */
-.submenu{
-    width: 24%;
-    max-height: 100%;
-    /*height: 400px;*/
-    background-color: brown;
-    float:left;
-
-
+.cargo{
+    text-align: center;
+    font-size: 22px ;
+    background-color:aliceblue;
+    margin: 2.5px 0px 2.5px 0px;
+    padding: 0.4em;
 }
 
-/* Linea de submenu*/
+.resaltar_texto{
+    font-size: 14px ;
+    font-weight:bolder;
+    margin-right: 2%;
+}
+
+.resaltar_texto2{     /* background-color: aqua; */
+    font-weight:bold;
+    padding-right: 18px;
+    text-indent: 22px;
+    font-size: 18px;
+    background-color:aliceblue;
+}
+
+/* punto circular en iconos */
+.punto {
+    height: 50px;
+    width: 50px;
+    background-color: #1c4f74;
+    border-radius: 50%;
+    text-align:center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+/* Linea*/
 .linea {
     border-top: 2px solid black;
     height: 2px;
-
-    max-width: 90%;
+    max-width: 100%;
     padding: 0%;
     margin: 1px 0 0 0;
     /*margin: 2px auto 0 auto;*/
@@ -152,121 +186,95 @@ body header section{
 
 
 
+/* icono para abrir la pestaña de contacto */ 
+#chat {
+    position: fixed;
+    bottom: 8px;
+    right: 0px;
+    font-size: 28px;
+    background-color: #2E88C7;
+    color:  white;
+    padding: 1%;
+    border-radius: 50%;
+    justify-content: center;;
+}
 
 
-
-/* Caja con contenido principal */
-.content{
-    float:right;
-    width: 75%;
+.sidebar {
+    color:rgba(255, 255, 255, 0.815);
+    width: 0px;
+    position: fixed;
     height: 100%;
-    /*
-    background-color: aqua;
-    */
+    width: 0%;
+    top: 60%;
+    left: 0;
+    z-index: 1;
+    background-color: #00324b;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding: 1rem 0;
+    box-sizing:border-box;
+}
+
+
+.sidebar .boton-cerrar {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 2rem;
+    display: block;
+    padding: 0;
+    line-height: 1.5rem;
+    margin: 0;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    vertical-align: top;
+
+    color:wheat;
+}
+
+.abrir-cerrar {
+    color: #2E88C7;
+    font-size:1rem;  
+    display: inline;
+}
+
+.formulario{
+    text-align: center;
 
 }
 
 
 
-/* Cuerpo general de cada seccion principal */
-body main section{
+textarea {
+    height: 11vw;
+    max-height: 125px;
+    width: 50%;
+    padding: 1em;
+    
+    transition: all 0.5s ease;
+    transition: width 0.4s ease-in-out;
+    resize: none;
+}
+
+textarea:focus {
+    height: 10vw;
+    width: 70%;
+}
+
+
+
+
+
+
+/* Cuerpo general de cada seccion principal */ /* Util cuando el submenu estaba a la izquierda */
+body main section{     /* background-color: aqua; */
     float:left;
     width: 100%;
     height: 100%;
     margin: 5px;
-    
-    /*
-    background-color: rgb(105, 128, 0);
-    */
 }
-
-/*Encabezado de cada seccion*/
-body main section article h2{
-    
-    /*display: flex;
-    justify-content: center;
-    align-self: left;
-        border: 2px solid rgb(0, 255, 170);
-    */
-    
-    font-size: 20px;
-    margin: 0%;
-    display:block;
-    justify-content: center;
-    text-align: left;
-    max-width: 100%;
-    text-indent: 2%;
-}
-
-
-
-
-
-
-
-
-   /* Panel de la izquierda */
-ul{
-
-    /*
-    background-color:rgb(223, 184, 10);
-    */
-
-    margin: 0%;
-    padding: 0% 0.75%;
-
-}
-
-
-
-
-
-
-
-
-
-
-.año{
-    font-weight:bold;
-    /*/background-color: #bbb;
-        border: 2px solid black;
-    */
-
-
-    padding-right: 18px;
-    text-indent: 22px;
-    font-size: 18px;
-    background-color:aliceblue;
-}
-
-td{
-    font-weight:lighter;
-    /*/background-color: #bbb;*/
-    font-size: 15px;
-}
-
-
-
-
-p{
-    margin: 1px;
-    background-color:aliceblue;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .contenido {
@@ -280,158 +288,6 @@ p{
 	background-color:#CCCCCC;
 }
 
-.dot {
 
 
 
-    height: 50px;
-    width: 50px;
-
-
-    background-color:purple;
-    border-radius: 50%;
-    text-align:center;
-    
-    display: inline-block;
-    vertical-align: middle;
-
-
-    /*
-    display: inline-block;
-    vertical-align: middle;
-
-    display:table-cell;*/
-    
-}
-
-/* Para los iconos que solo estan en los encabezados */
-
-body main section i{
-    
-    color: white;
-    padding: 30%;
-}
-
-
-
-
-
-
-.cargo{
-    text-align: center;
-    font-size: 22px ;
-    /*
-    text-decoration:underline;
-    font-weight:800;
-    */
-}
-
-
-#duracion{
-    font-size: 14px ;
-    font-weight:bolder;
-    margin-right: 2%;
-}
-
-li{
-    /*
-    list-style:none;
-    list-style-position:inside;
-        background-color:rgb(0, 195, 255);
-    */
-    list-style:square;
-    list-style-position:inside;
-    /*
-    color: rgba(185, 126, 185, 0.527);
-    color: rgba(101, 101, 230, 0.842);
-    */
-    color: rgba(64, 64, 102, 0.767);
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-#div1{
-    max-width: 50%;
-    background-color: red;
-}
-
-dd {
-
-    margin: 0;
-}
-
-dd, dt {
-    
-    display: inline;
-}
-dd, dt, .address {
-
-    
-    vertical-align: middle;
-}
-.address {
-    display: inline-block;
-    white-space: pre;
-}*/
-
-/*
-  .imgcontent {
-    height:80%;
-    text-align: left;
-    background-color: rgb(138, 150, 240);
-   }
-   */
-
-/*
-
-.image--cover {
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    margin: 20px;
-    object-fit: cover;
-    object-position: center right;
-  }
-  
-  .users{
-    text-decoration: none;
-    color: #374457;
-    font-size: 18px;
-    font-weight: bold;
-    display:flex;
-    align-items:center;
-  }
-  
-  
-  .container-username{
-    
-    display:flex;
-    flex-direction:column;
-  
-  }*/
-
-  /*
-  * {
-    padding: 0;
-     margin: 0 auto 0 auto; 
-    }*/

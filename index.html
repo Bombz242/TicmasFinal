@@ -1,43 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!DOCTYPE html>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title> Ticmas CV </title>
 
     <link rel="stylesheet" href="CSS/estilos.css">
-
-
-    <title>Title document</title>
-
     <script src="https://kit.fontawesome.com/c0e8ea5c34.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <link rel="icon" href="https://academy.profesional.ticmas.io/favicon.ico">
 
-
-
-    <script type="text/javascript" 
-    src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
-</script>
-
-
-
-<script type="text/javascript">
-    $(document).ready(function () {
-        
-     $('#ajaxBtn').click(function(){
-        $.ajax('/jquery/getdata',   // request url
-        {            
-            success: function (data, status, xhr) {    // success callback function
-                    $('p').append(data);
-            }
-        });
-     });
-
-    });
-</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet"> 
 
 
 </head>
@@ -45,347 +23,207 @@
 
 <body>
 
-
-
+      <!--  Comienzo apartado banner principal -->
     <header>
-        <div>
-            <img id="profile"  src="https://loremflickr.com/400/400" />
-
-            <section class="sectioncontent">
-
-
-                <h1 id="nombre"> Nombre de la persona</h1>
-                <span>
-                    <h4 id="profesion">Lic. en Diseño grafico y animacion</h4>
-                </span>
-            </section>
-
-
-            <section>
-                <article id="profile-des" >
-                    Egresada de la carrera de Diseño Grafico y Animación, en busca de oportunidades para trabajar, 
-                    con experiencia en el área de diseño gráfico y marketing, con mucho interés en el área de publicidad 
-                    e imagen corporativa.
-                    <!--
-                        <h3>PERFIL PROFESIONAL</h3>
-                    <p>
-            Egresada de la carrera de Diseño Grafico y Animación, en busca de oportunidades para trabajar, 
-            con experiencia en el área de diseño gráfico y marketing, con mucho interés en el área de publicidad 
-            e imagen corporativa.
-                    </p> -->
-                </article>
-            </section>
-
+        <div class="img-container-block">
+            <img id="profile"  src="https://loremflickr.com/400/400" alt="Imagen de Perfil" />
         </div>
 
+        <div class="img-container-block">
+            <h1 id="nombre"> Nombre de la persona</h1>
+        </div>
 
+        <h4 id="profesion">Lic. en Diseño grafico y animación </h4>
+        <section id="profile-des">
+            Egresada de la carrera de Diseño Gráfico y Animación, en busca de oportunidades para trabajar,
+            con experiencia en el área de diseño gráfico y marketing, con mucho interés en el área de publicidad
+            e imagen corporativa.
+        </section>
+        <section id="profile-des">
+            <div id="direccion"> Dirección <span id="ciudad"> ciudad </span></div>
+        </section>
     </header>
-    
 
-    <nav class="submenu">
-        <p> Datos personales:</p>
-        <p id="fecha"> Fecha de nacimiento</p>
-        <p id="direccion"> Direccion</p>
-        <p id="ciudad"> Ciudad</p>
+
+
+
+    <main>
         
-        <p id="telefono"> Telefono</p>
-        <p id="email"> Email</p>
+        <!--  Comienzo apartado experiencia laboral -->
+        <section data-aos="fade-left" >
+            <h2> <span class="punto"> <i class="fa-solid fa-briefcase"></i> </span>
+                EXPERIENCIA LABORAL
+            </h2>
+            <div class="linea"></div>
+            <ul data-aos="fade-right">
+                <p class="cargo"> International Printing and Design (Home Office) </p>
+                <span class="resaltar_texto">Duración </span> 2017-Presente
+                <li>Creación de Menus para Restaurantes de Greensboro. </li>
+                <li>Publicidad y campañas en Redes Sociales. </li>
+                <li>Tarjetas de presentación. Branding. Imagen Corporativa. Diseño de publicidad en vehículos.
+                    Retoque y edición en Fotografía. </li>
+            </ul>
 
+            <ul data-aos="fade-right">
+                <p class="cargo">  Art Kingdom S.A. de C.V.</p>
+                <span class="resaltar_texto">Duración </span> 11 meses (Servicio/Freelance)
+                <li>Creación de graficos para campañas publicitarias de cine. </li>
+                <li>Diseño y arte para redes sociales. </li>
+                <li>Creación de Manual de imagen corporativa y componentes. </li>
+                <li>Colaboración de propuesta para pósters (Estar o no Estar). </li>
+            </ul>
 
-        <div id="boton" style="width:150px; height:60px; border:thin solid silver">
-            Sección de contenidos...
-          </div>
-        <!--
-    <div class="imgcontent">
-
-
-        <img src="https://loremflickr.com/400/400" />
-  
-
-        <div class="linea"></div>
-
-        <ul>
-            <li>
-                Nombre
-            </li>
-            <li>
-                <i class="fa-solid fa-house"></i>
-                Direccion
-            </li>
-            <li>
-                <i class="fa-solid fa-cake-candles"></i>
-                Fecha de nacimiento
-            </li>
-            <li>
-                <i class="fa-solid fa-graduation-cap"></i>
-                Habilidades y conocimientos
-            </li>
-            <li>
-                <i class="fa-solid fa-briefcase"></i>
-                Experiencia laboral
-            </li>
-            <li>
-                <i class="fa-solid fa-medal"></i>
-                Logros y proyectos
-            </li>
-            <li>
-                <i class="fa-solid fa-envelope"></i>
-                Contacto
-            </li>
-        </ul>
-
-    </div>
-      -->
-    </nav>
-
-    <main class="content">
-
-        <section>
-
-            <article>
-
-                <h2> 
-                    <span class="dot"> <i class="fa-solid fa-briefcase"></i> </span>
-                    EXPERIENCIA LABORAL
-                </h2>
-
-                <div class="linea"></div>
-
-                <ul>
-                    <p class="cargo"> International Printing and Desing (Home Office) </p>
-                    <span id="duracion">Duracion </span> 2017-Presente
-                    <li>Creacion de Menus para Restaurantes de Greensboro </li>
-                    <li>Publicidad y campañas en Redes Sociales </li>
-                    <li>Tarjetas de presentacion. Branding. Imagen Corporativa. Diseño de publicidad en vehiculos. 
-                        Retoque y edicion en Fotografia </li>
-                </ul>
-
-                <ul>
-                    <p class="cargo">  Art kingdom S.A. de C.V.</p>
-                    <span id="duracion">Duracion </span> 11 meses (Servicio/Freelance)
-                    <li>Creacion de graficos para campañas publicitarias de cine </li>
-                    <li>Diseño y arte para redes sociales </li>
-                    <li>Creacion de Manual de imagen corporativa y componentes </li>
-                    <li>Colaboracion de propuesta para posters (Estar o no Estar) </li>
-                </ul>
-
-
-                <ul>
-                    <p class="cargo">  Freelance Online</p>
-                    <span id="duracion">Duracion </span> 2013-Presente
-                    <li>Catedra Cinepolis UDLAP 2019 (Ganador del 1° Lugar) </li>
-                    <li>Publicidad para la empresa "KOKO"</li>
-                    <li>Creacion de logotipo y publicidad para la empresa "Delicious" </li>
-                    <li>Graficos para redes sociales de Skymedia y Viewlink </li>
-                    <li>Publicidad para la empresa "Aprovechamiento Solar Integral" </li>
-                </ul>
-
-            </article>
+            <ul data-aos="fade-right">
+                <p class="cargo">  Freelance Online</p>
+                <span class="resaltar_texto">Duración </span> 2013-Presente
+                <li>Cátedra Cinépolis UDLAP 2019 (Ganador del 1° Lugar). </li>
+                <li>Publicidad para la empresa "KOKO".</li>
+                <li>Creación de logotipo y publicidad para la empresa "Delicious". </li>
+                <li>Gráficos para redes sociales de Skymedia y Viewlink. </li>
+                <li>Publicidad para la empresa "Aprovechamiento Solar Integral". </li>
+            </ul>
         </section>
 
+  <!--  Comienzo apartado Habilidades y conocimientos -->
+        <section data-aos="fade-left" >
 
-
-
-
-
-
-
-        <section>
-            <article>
-                <h2>
-                    <span class="dot"> <i class="fa-solid fa-graduation-cap"></i> </span>
-                    HABILIDADES Y CONOCIMIENTOS
-                </h2>
-                <div class="linea"></div>
-                <p>
-                    <div>
-                        <span id="duracion">Informatica:</span>
-                        Certificacion de paqueteria de Microsoft Office 2010
-                    </div>
-                
-                    <div>
-                        <span id="duracion">Congresos:</span>
-                        Illustrator Deathmatch Ola grafica
-                    </div>
-                
-                    <div>
-                        <span id="duracion">Manejo de paqueteria de Adobe </span>
-
-                        <p id="pslogos">
-                            <img id="pslogos" src="Img/Pslogos.png" />
-                        </p>
-
-                    </div>
-                
-                    <div>Idiomas ingles y español</div>
-            
+            <h2> <span class="punto"> <i class="fa-solid fa-graduation-cap"></i> </span>
+                HABILIDADES Y CONOCIMIENTOS
+            </h2>
+            <div class="linea"></div>
+            <div data-aos="fade-right" >
+                <span class="resaltar_texto">Informática:</span>
+                Certificación de paquetería de Microsoft Office 2010.
+            </div>
+        
+            <div data-aos="fade-right" >
+                <span class="resaltar_texto">Congresos:</span>
+                Illustrator Deathmatch Ola gráfica.
+            </div>
+        
+            <div data-aos="fade-right">
+                <span class="resaltar_texto">Manejo de paqueteria de Adobe </span>
+                <p id="pslogos">
+                    <img id="pslogos" src="Img/Pslogos.png" />
                 </p>
-            </article>
+            </div>
+
+            <div data-aos="fade-right">
+                <span class="resaltar_texto">Idiomas: </span>
+                <ol>
+                    <ul>
+                        <li>Español: Nativo </li>
+                        <li>Ingles: C1</li>
+                        <li>Francés: B1 </li>
+                    </ul>
+                </ol>
+            </div>
+
         </section>
 
+  <!--  Comienzo apartado logros y proyectos -->
+        <section data-aos="fade-left" >
+            <h2> <span class="punto"> <i class="fa-solid fa-medal"></i> </span>
+                LOGROS Y PROYECTOS
+            </h2>
+            <div class="linea"></div>
 
-
-        <section>
-            <article>
-                <h2>
-                    <span class="dot"> <i class="fa-solid fa-medal"></i> </span>
-                    LOGROS Y PROYECTOS
-                </h2>
-                <div class="linea"></div>
-
-
-
-                <table>
-                    <tbody>
+            <table>
+                <tbody data-aos="fade-right">
                     <tr>
-                    <td class="año">&nbsp; 2017 </td>
+                    <td class="resaltar_texto2">&nbsp; 2017 </td>
                     <td>
-                        <p>&nbsp;Servicio Artkingdom CDMX</p>
-                        <p>&nbsp;Apoyo en poster con nominacion GTA</p>
-                        <p>&nbsp;Graduada con Mencion Honorifica de Universidad</p>
+                        <p>&nbsp;Servicio Artkingdom CDMX.</p>
+                        <p>&nbsp;Apoyo en póster con nominación GTA.</p>
+                        <p>&nbsp;Graduada con Mención Honorífica de Universidad.</p>
                     </td>
                     </tr>
                     <tr>
-                        <td class="año">&nbsp; 2016</td>
+                        <td class="resaltar_texto2">&nbsp; 2016</td>
                         <td>
-                            <p>&nbsp;Servicio Social Cool Planet</p>
+                            <p>&nbsp;Servicio Social Cool Planet.</p>
                         </td>
                     </tr>
 
                     <tr>
-                        <td class="año">&nbsp; 2015 </td>
+                        <td class="resaltar_texto2">&nbsp; 2015 </td>
                         <td>
-                            <p>&nbsp;Carta por mejor promedio en la Universidad</p>
-                            <p>&nbsp;Primer lugar en concurso de Taller de carreras</p>
+                            <p>&nbsp;Carta por mejor promedio en la Universidad.</p>
+                            <p>&nbsp;Primer lugar en concurso de Taller de carreras.</p>
                         </td>
                     </tr>
 
                     <tr>
-                        <td class="año">&nbsp; 2013 </td>
+                        <td class="resaltar_texto2">&nbsp; 2013 </td>
                         <td>
-                            <p>&nbsp;Beca en la Universidad por promedio de la preparatoria</p>
-                            <p>&nbsp;Primer lugar en concurso de cartel</p>
+                            <p>&nbsp;Beca en la Universidad por promedio de la preparatoria.</p>
+                            <p>&nbsp;Primer lugar en concurso de cartel.</p>
                         </td>
                     </tr>
-
-
-                    </tbody>
-                </table>
-
-
-            </article>
+                </tbody>
+            </table>
         </section>
 
 
 
+              <!-- Boton de contacto  -->
+        <div id="chat">                    
+            <i class="fa-regular fa-comment"
+                id="abrir" class="abrir-cerrar" href="javascript:void(0)"  onclick="mostrar()"
+            ></i>
+        </div>
+            
+        
+        <!--  Comienzo formulario de contacto -->
+        <section id="sidebar" class="sidebar">
+            <a href="javascript:void(0)" class="boton-cerrar" onclick="ocultar()">×</a>
+            <article>
+                    <form class="formulario" action="/index.html" method="get">
+                        Utilice este medio para contactarse. 
+                        <div>
+                            <!--
+                            <label for="name">Nombre</label> <br>
+                            -->
+                            <input type="text" id="name" name="user_name" placeholder="Nombre">
+                        </div>
+                        <div>
+                            <!--
+                                <label for="mail">E-mail *</label> <br>
+                            -->
+                            <input type="email" id="mail" name="user_mail" placeholder="Correo electronico *" required>
+                        </div>
+
+                        <div>
+                            <label for="msg">Mensaje:</label>
+                            <br>
+                            <textarea  id="msg" name="user_message"></textarea>
+
+                        </div>
+                        <button> Enviar </button>
+                        <br>
+                        * Campos obligatorios
+
+                </form>
+            </article>
+        </section>
     </main>
 
 
+
+  <!--  Comienzo apartado codigojs -->
     <script src="JS/JQuery_Test.js"></script>
-    
     <script src="JS/codigoindex.js"> </script> 
 
 
-    <!--
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <script>
+        AOS.init();
+    </script>
 
-
-
-                    <article  class="formacion">
-
-                <h2>FORMACION ACADEMICA</h2>
-
-                <dl>
-
-                    <dt>
-                        <span id="span1">2010-2013</span>  
-                        <dd>Instituto Anglo de Cordoba.</dd>
-                        <dd id="span2">Privada tres arroyos, El Barreal.</dd>
-                    </dt>
-                    
-                    <p></p>
-                    <dt>
-                        <span id="span1">2013-2017</span>  
-                        <dd>Universidad TecMilenio.</dd>
-                        <dd id="span2">Boca del Rio - Anton Lizardo</dd>
-                    </dt>
-
-
-                    <dd>
-                        <span id="div1">2015-2018</span>
-                        institucion san carlos de bariche
-                    </dd>
-                    <dd>Lugar de la institucion.</dd>
-                
-            </dl>
-        </article>
-
-    -->
-
-
-    <!--
-
-<span id="div1">2015-2018</span>
-        
-<c> 2015-1234</c>
-
-    <div class="submenu">
-        
-        <div>asdadsadas asdsadadasdsa dasdasdsadasdasdas dasdasdsadasdas</div>
-    </div>
-
-
-
-    <div class="content">   
-    
-        
-        <div class="c-profesional">
-
-            <h1>
-                TITULO H1 CON EL NOMBRE
-            </h1>
-            <h5>TITULO H5 CON TITULO Y RANGO
-            </h5>
-            <div style="float: right;">
-                <div class="box">     </div>
-                <div class="box">     </div>
-
-            </div>
-
-            <div style="float: 22;">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
-                The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, 
-                content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as 
-                their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have 
-                evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</div>
-
-
-                
-            <p>asdadsa</p>
-            <p>asdadsa</p>
-        
-        </div>
-        <div class="c-experiencia">     
-
-            
-            <div class="in-txt">     </div>
-            <div class="in-txt">     </div>
-            <div class="in-txt">     </div>  
-
-        </div>
-
-        <div class="c-habilidad">     </div>
-
-        <div class="c-logros">     </div>
-
-        <div class="box">     </div>
-        <div class="box">     </div>
-        <div class="box">     </div>
-
-    </div>
-     -->
-
-     
-     
-    
 </body>
+
+
+
+
 </html>

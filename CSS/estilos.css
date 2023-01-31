@@ -2,7 +2,8 @@
 /* Primer fondo */ /* background-color: aqua; */
 header {
     float: left;
-    background-image: url(.../Img/4.jpg); /* Probando esto */
+    /*     background-image: url(.../Img/4.jpg); */
+    background-image: url(https://bombz242.github.io/TicmasFinal/Img/4.jpg); /* Agregando la url directa*/
     width: 100%;
     /*background-color: rgb(220, 223, 245); */
 }
@@ -10,7 +11,6 @@ header {
 .img-container-block {
     text-align: center;
 }
-
 
 @media only screen and (min-width:750px){
     #profile{ /*Imagen principal de perfil*/
@@ -239,8 +239,7 @@ body main section i{
 
 .formulario{
     text-align: center;
-
-}
+} /* mas estilos*/
 
 textarea {
     height: 11vw;

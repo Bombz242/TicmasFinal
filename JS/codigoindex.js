@@ -12,14 +12,12 @@ function mostrar() {
   document.getElementById("cerrar").style.display = "inline";
 }
 
-
 function ocultar() {
   document.getElementById("sidebar").style.width = "0";
   document.getElementById("contenido").style.marginLeft = "0";
   document.getElementById("abrir").style.display = "inline";
   document.getElementById("cerrar").style.display = "none";
 }
-
 
 function PruebaMozilla(){
     //const requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';

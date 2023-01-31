@@ -3,7 +3,7 @@
 header {
     float: left;
     /*     background-image: url(.../Img/4.jpg); */
-    background-image: url(https://bombz242.github.io/TicmasFinal/Img/4.jpg); /* Agregando la url directa*/
+    background-image: url(https://raw.githubusercontent.com/Bombz242/TicmasFinal/main/Img/4.jpg); /* Agregando la url directa*/
     width: 100%;
     /*background-color: rgb(220, 223, 245); */
 }

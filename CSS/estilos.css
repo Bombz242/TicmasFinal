@@ -2,7 +2,7 @@
 /* Primer fondo */ /* background-color: aqua; */
 header {
     float: left;
-    background-image: url(/Img/4.jpg);
+    background-image: url(.../Img/4.jpg); /* Probando esto */
     width: 100%;
     /*background-color: rgb(220, 223, 245); */
 }
@@ -12,9 +12,7 @@ header {
 }
 
 
-
 @media only screen and (min-width:750px){
-    
     #profile{ /*Imagen principal de perfil*/
         float: left;
     }
@@ -229,8 +227,7 @@ body main section i{
     height: 32px;
     width: 32px;
     text-align: center;
-    vertical-align: top;
-
+    /*    vertical-align: top; */
     color:wheat;
 }
 
@@ -244,8 +241,6 @@ body main section i{
     text-align: center;
 
 }
-
-
 
 textarea {
     height: 11vw;

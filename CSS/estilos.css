@@ -246,6 +246,7 @@ body main section i{
 textarea {
  
     height: max(5vw, 15px);
+    max-height: max(4vw, 15px);
     width: 50%;
 
     padding: 1em;

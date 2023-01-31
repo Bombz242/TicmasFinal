@@ -12,7 +12,7 @@ header {
     text-align: center;
 }
 
-@media only screen and (min-width:750px){
+@media only screen and (min-width:800px){
     #profile{ /*Imagen principal de perfil*/
         float: left;
     }
@@ -20,6 +20,7 @@ header {
     .img-container-block {
         text-align: left;
     }
+
 }
 
 #profile{ /*Imagen principal de perfil*/
@@ -239,22 +240,24 @@ body main section i{
 
 .formulario{
     text-align: center;
-} /* mas estilos*/
+    height: 30vh;
+} 
 
 textarea {
-    height: 11vw;
-    max-height: 125px;
+ 
+    height: max(5vw, 15px);
     width: 50%;
+
     padding: 1em;
-    
     transition: all 0.5s ease;
     transition: width 0.4s ease-in-out;
     resize: none;
+
 }
 
 textarea:focus {
-    height: 10vw;
     width: 70%;
+   /* height: 100%;*/
 }
 
 
